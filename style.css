@@ -68,6 +68,12 @@ button:active {
     font-weight: 900;
 }
 
+.center-block {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 .top-bar {
     position: fixed;
     top: 0px;
@@ -219,8 +225,6 @@ button:active {
 }
 
 .page-main-content {
-    padding-left: 100px;
-    padding-right: 100px;
     margin-top: 50px;
 }
 
@@ -243,6 +247,8 @@ button:active {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .small-page-card-container {
@@ -387,6 +393,13 @@ button:active {
         font-size: 100%;
     }
     .page-section {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .page-card {
+        margin: 4px;
+    }
+    .page-card-container {
         padding-left: 5px;
         padding-right: 5px;
     }
