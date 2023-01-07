@@ -149,6 +149,7 @@ hr {
     width: fit-content;
     justify-content: right;
     align-items: center;
+    margin-right: 20px;
 }
 
 .top-bar-btn {
@@ -219,7 +220,8 @@ hr {
     position: absolute;
     bottom: 0%;
     left: 0px;
-    height: 500px;
+    min-height: 500px;
+    min-width: 100%;
     opacity: 0.3;
 }
 
