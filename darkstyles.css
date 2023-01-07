@@ -1,0 +1,179 @@
+body {
+    background-color: #0a1c2d;
+}
+
+input {
+    border: solid 3px #346898;
+    background-color: #163e63;
+    color: white;
+}
+
+input:focus {
+    border: solid 3px #94c6f4;
+    outline: solid 3px #94c6f4;
+}
+
+::placeholder {
+    color: #afd8ffbd;
+}
+
+button, .button {
+    background-color: #20456a;
+    border: solid 3px #20456a;
+    color: white;
+}
+
+input:hover {
+    border: solid 3px #4587c4;
+}
+
+button:hover, .button:hover {
+    background-color: #4587c4;
+    border: solid 3px #4587c4;
+}
+
+button:active, .button:active {
+    background-color: #94c6f4;
+    border: solid 3px #94c6f4;
+}
+
+hr {
+    color: #2d689f;
+    border: solid 2px #2d689f;
+}
+
+.top-bar {
+    background-color: #23527d33;
+    color: white;
+}
+
+.top-bar-btn:hover {
+    background-color: #00000022;
+}
+
+.page-banner {
+    background: linear-gradient(to top, #19232c, #05335e);
+}
+
+.page-banner-left-big-text {
+    color: #70a9de;
+    text-shadow: 0 0 20px #afd8ff77;
+}
+
+.page-banner-left-medium-text {
+    color: white;
+}
+
+.page-banner-left-small-text {
+    color: #22588c;
+}
+
+.page-banner-btn {
+    border-color: #346898;
+}
+
+.page-banner-title {
+    color: #afd8ff;
+    text-shadow: 0 0 20px #afd8ff77;
+}
+
+.page-banner-subtitle {
+    color: #afd8ff;
+    text-shadow: 0 0 10px #afd8ff77;
+}
+
+.page-banner-left-title {
+    color: #244665;
+}
+
+.page-banner-left-page-title {
+    color: #3f719d;
+}
+
+.page-card {
+    border: solid 4px #2d689f;
+    background-color: #2865a23b;
+}
+
+.page-card:hover {
+    background-color: #5fa6ec44;
+    color: white;
+}
+
+.page-card:hover .page-section-title {
+    color: white;
+}
+
+.page-card:hover .page-section-description {
+    color: white;
+}
+
+.page-card-person .page-section-description {
+    color: white;
+}
+
+
+
+.small-page-card {
+    border: solid 3px #4f779c44;
+    background-color: #31567b55;
+}
+
+.small-page-card .page-section-description {
+    color: #ffffff;
+}
+
+.small-page-card:hover .page-section-description {
+    color: white;
+}
+
+.small-page-card:hover .page-section-title {
+    color: white;
+}
+
+.page-section-title {
+    color: #93b5d7;
+}
+
+.page-section-subtitle {
+    color: #346898;
+}
+
+.page-section-description a {
+    color: #245b8f;
+}
+
+.page-section-description a:hover {
+    color: #4489ca;
+}
+
+.page-section-description {
+    color: #93b5d7;
+}
+
+.page-card:hover a {
+    color: white;
+}
+
+.page-card a:hover {
+    color: #94cbff;
+}
+
+.faq-question {
+    background-color: #294a6788;
+    color: #a3c5e7;
+}
+
+.faq-question:hover {
+    background-color: #2a4c6a;
+}
+
+.faq-answer {
+    background-color: #0a2d4f82;
+    border-left: solid 3px #2f6da7;
+    color: #194976;
+}
+
+.schedule-row {
+    color: white;
+}

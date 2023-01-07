@@ -7,15 +7,20 @@
 
     <meta name="og:title" content="MountainHacks 2023" />
     <meta name="og:description" content="Join an in-person hackathon for high school students!" />
-    <meta name="og:image" content="" />
 
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="assets/favicon.png" />
+
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+
+    <link href="style.css" rel="stylesheet" type="text/css" id="light-theme-css" />
+    <link href="darkstyles.css" rel="stylesheet" type="text/css" id="dark-theme-css" />
+
     <title>MountainHacks 2023</title>
 
-    <link rel="icon" href="" sizes="all" />
+    <!--     <link rel="icon" href="" sizes="all" /> -->
 </head>
 
-<body onload="adjustTopMargin(250)">
+<body onload="adjustStuff()">
     <div class="top-bar">
         <div class="top-bar-left">
             <a href="..">
@@ -30,70 +35,105 @@
                     HOME
                 </h3>
             </a>
-            
+
             <a class="top-bar-btn" href="register.html">
                 <h3 class="top-bar-btn-text">
                     REGISTER
                 </h3>
             </a>
-            
+
             <a class="top-bar-btn" href="sponsors.html">
                 <h3 class="top-bar-btn-text">
                     SPONSORS
                 </h3>
             </a>
+
+            <a class="top-bar-btn" href="aboutus.html">
+                <h3 class="top-bar-btn-text">
+                    ABOUT US
+                </h3>
+            </a>
         </div>
     </div>
     <div class="page-content">
-        <div class="page-banner">
+        <div class="page-banner" id="main-page-banner">
             <div class="page-banner-left">
-                <h1>insert fancy effect here</h1>
+                <div class="page-banner-left-content">
+                    <h2 class="page-banner-left-big-text">In-Person <span
+                            onclick="if (zoomEffectEnabled !== undefined) zoomEffectEnabled = !zoomEffectEnabled;"
+                            style="cursor: pointer">•</span> <a href="links/maps.html" target="_blank"
+                            class="page-banner-link">MHHS</a>
+                    </h2>
+                    <a download href="links/MountainHacks(Calendar).ics">
+                        <h2 class="page-banner-left-medium-text page-banner-link">
+                            March 18, 2023
+                        </h2>
+                    </a>
+                    <div class="page-banner-btn-container">
+                        <button class="big-button page-banner-btn">REGISTER</button>
+                        <a href="schedule.html" class="button big-button page-banner-btn">SCHEDULE</a>
+                        <button class="big-button page-banner-btn">DISCORD</button>
+                    </div>
+                    <br />
+                    <br />
+                    <h1 class="page-banner-left-small-text">
+                        GET EMAIL UPDATES!
+                    </h1>
+                    <div class="email-updates-input-container">
+                        <input class="input" id="email-updates-input" type="email" placeholder="Enter email" />
+                        <button class="input">JOIN→</button>
+                    </div>
+                </div>
             </div>
             <div class="page-banner-right">
                 <h1 class="page-banner-title">MOUNTAIN</h1>
                 <h2 class="page-banner-subtitle">HACKS</h2>
             </div>
 
-            <div class="page-banner-effect-container">
-<!--                 <div id="mountain-effect"></div> -->
-                <img src="assets/mountains_wide.svg" id="mountain"/>
+            <div class="page-banner-effect-container" id="mountain-effect-container">
+                <!--                 <div id="mountain-effect"></div> -->
+                <img src="assets/mountains.svg" id="mountain" />
+            </div>
+            <div class="page-banner-effect-container" id="stars-canvas-container">
+                <canvas width="100%" height="100%" id="stars-canvas"></canvas>
+            </div>
+            <div class="page-banner-effect-container" id="down-arrow-effect-container">
+                <h1 id="down-arrow-effect" onclick="onDownArrowClick()">↓</h1>
             </div>
         </div>
+        
         <div class="page-main-content">
-            <div class="page-section">
-                <h1 class="page-section-title">
-                    GET EMAIL UPDATES!
-                </h1>
-                <div id="email-updates-input-container">
-                    <input class="input" id="email-updates-input" type="email" placeholder="Enter email"/>
-                    <button class="input">JOIN →</button>
-                </div>
-            </div>
             <div class="page-section">
                 <h1 class="page-section-title">
                     ABOUT
                 </h1>
+                <hr />
                 <p class="page-section-description center-text">
-                    Mountain Hacks 2023 is an in-person hackathon for high school students!
+                    MountainHacks is the Tri-Valley area's largest hackathon, hoping to bring together 200+ students
+                    from around California to learn about new technologies, build innovative projects, and share their
+                    work with the community!
                 </p>
             </div>
 
             <div class="page-card-container">
                 <div class="page-card">
                     <h1 class="page-section-title">
-                        WHO
+                        WHAT
                     </h1>
                     <p class="page-section-description">
-                        you
+                        An in-person hackathon for high school students, with workshops, food, swag, and more! You can
+                        code using anything you want, as long as it's related to the theme. If you don't have enough
+                        experience, you can come to the workshops!
                     </p>
                 </div>
 
                 <div class="page-card">
                     <h1 class="page-section-title">
-                        WHAT
+                        WHO
                     </h1>
                     <p class="page-section-description">
-                        hackathon
+                        All high-school students from grades 9-12 are invited! Whether you have no experience, or you've
+                        created mind-blowing applications, we want everyone to have a great time.
                     </p>
                 </div>
 
@@ -102,7 +142,9 @@
                         WHEN
                     </h1>
                     <p class="page-section-description">
-                        2023
+                        MountainHacks will take place on Saturday, March 18, 2023 from 7 AM to 9 PM. The schedule can be
+                        found on
+                        <a href="schedule.html">this</a> page.
                     </p>
                 </div>
 
@@ -111,36 +153,271 @@
                         WHERE
                     </h1>
                     <p class="page-section-description">
-                        MHHS
+                        MountainHacks will be hosted at Mountain House High School, in Mountain House, California. <a
+                            href="links/maps.html" target="_blank">Open in Google Maps</a>
+                        <br/>
+                        The address is 1090 S. Central Parkway, 1090 Central Pkwy, Mountain House, CA 95391
                     </p>
                 </div>
-
+                
                 <div class="page-card">
                     <h1 class="page-section-title">
                         WHY
                     </h1>
                     <p class="page-section-description">
-                        because
+                        Hackathons can be a great way for people to learn new skills,
+                        collaborate with others, and build something creative in a short
+                        period of time. They can be especially beneficial for people who
+                        are interested in technology, as they provide an opportunity to
+                        work on projects that involve programming, design, and
+                        problem-solving.
                     </p>
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="page-section">
+                <h1 class="page-section-title">
+                    Prizes
+                </h1>
+                <hr />
+                <p class="page-section-description center-text">Placeholder for now. Not actual prizes.</p>
+                <div class="page-card-container small-page-card-container">
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Something Cool
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://www.oregonlottery.org/wp-content/uploads/2020/03/OL-CLAIMAPRIZE-Top-HeaderLeft-ClaimAPrize.png" />
+                    </div>
+
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Something cooler
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://merriam-webster.com/assets/mw/images/article/art-wap-article-main/light%20blue%20gift%20box%20on%20light%20blue%20background-7944-3685148ad0242073104d5c374f6b67b6@1x.jpg" />
+                    </div>
+
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Not this
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://www.jacksontrophies.com/media/wysiwyg/Fifa_world_cup_trophy.png" />
+                    </div>
+                </div>
+            </div>
+
+            <br/>
+            <br/>
+
+            <div class="page-section">
+                <h1 class="page-section-title">
+                    THANK YOU TO OUR SPONSORS!
+                </h1>
+                <hr />
+                <p class="page-section-description center-text">Placeholder for now. Not actual sponsors.</p>
+                <div class="page-card-container small-page-card-container">
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Google
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" />
+                    </div>
+
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Amazon
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png" />
+                    </div>
+
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Twitter
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" />
+                    </div>
+                </div>
+            </div>
+
+            <br />
+            <br />
+
+            <div class="page-section faq-section">
+                <h1 class="page-section-title page-section-big-left-title">FAQs</h1>
+                <hr />
+                <br />
+
+                <div class="faq-container">
+                    <h2 class="page-section-subtitle faq-question">
+                        <ion-icon name="caret-down"></ion-icon>
+                        What is a hackathon?
+                    </h2>
+                    <div class="faq-answer">
+                        <p class="page-section-description">
+                            Hackathons can be a great way for people to learn new skills,
+                            collaborate with others, and build something creative in a
+                            short period of time. They can be especially beneficial for
+                            people who are interested in technology, as they provide an
+                            opportunity to work on projects that involve programming, design,
+                            and problem-solving.
+                            <br/>
+                            <br/>
+                            Participating in a hackathon can also be a fun and exciting way
+                            to challenge oneself and push the boundaries of one's abilities.
+                            It can be a great opportunity to network with other people in the
+                            industry and potentially meet future colleagues or mentors.
+                            <br/>
+                            <br/>
+                            Additionally, hackathons can be a great way for people to gain
+                            recognition for their work and potentially even land a job or
+                            internship. Many hackathons are sponsored by companies, who may be
+                            looking for talented individuals to join their teams.
+
+                        </p>
+                    </div>
                 </div>
 
-                <div class="page-card">
-                    <h1 class="page-section-title">
-                        HOW
-                    </h1>
-                    <p class="page-section-description">
-                        like that
-                    </p>
+                <div class="faq-container">
+                    <h2 class="page-section-subtitle faq-question">
+                        <ion-icon name="caret-down"></ion-icon>
+                        What is MountainHacks?
+                    </h2>
+                    <div class="faq-answer">
+                        <p class="page-section-description">
+                            Mountain Hacks is a hackathon etc etc etc add more description
+                        </p>
+                    </div>
                 </div>
+
+                <div class="faq-container">
+                    <h2 class="page-section-subtitle faq-question">
+                        <ion-icon name="caret-down"></ion-icon>
+                        Do I need experience to participate?
+                    </h2>
+                    <div class="faq-answer">
+                        <p class="page-section-description">
+                            All you need to participate is an interest in coding!
+                            You can attend as a beginner, as we'll be
+                            hosting several workshops to teach you many different things.
+                            Already have a lot of experience?
+                            That's great! Go sign up at the bottom of this page.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-container">
+                    <h2 class="page-section-subtitle faq-question">
+                        <ion-icon name="caret-down"></ion-icon>
+                        What should I bring?
+                    </h2>
+                    <div class="faq-answer">
+                        <p class="page-section-description">
+                            To participate in a hackathon, you will typically need to have a computer and any necessary software or tools required to complete your project. This may include a code editor, a programming language, and any libraries or frameworks that are needed.
+                            <br/>
+                            <br/>
+                            You may also want to bring other supplies such as a charger and any other electronic devices you might need, as well as any personal items you will need during the event.
+                            <br/>
+                            <br/>
+                            In addition to the practical items, it can also be helpful to come to a hackathon with an open mind and a willingness to learn and collaborate with others. Hackathons are often fast-paced and intensive, so it can be helpful to be flexible and adaptable.
+                            <br/>
+                            <br/>
+                            It is important to carefully review the specific requirements and guidelines for the hackathon you are attending to ensure that you have everything you need to participate. The hackathon organizers may provide more information on what to bring or what will be provided for participants.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq-container">
+                    <h2 class="page-section-subtitle faq-question">
+                        <ion-icon name="caret-down"></ion-icon>
+                        I don't know what to make, what should I make?
+                    </h2>
+                    <div class="faq-answer">
+                        <p class="page-section-description">
+                            You can make something using any technology or language!
+                            <br/>
+                            <br/>
+                            Here are some examples of what you can make:
+                            <br/>
+                            <br/>
+                            A mobile or web app
+                            <br/>
+                            A software tool or utility
+                            <br/>
+                            A hardware prototype or device
+                            <br/>
+                            A machine learning model or data visualization
+                            <br/>
+                            A game or interactive experience
+                            <br/>
+                            <br/>
+                            You can also search up other hackathon projects that people have made for inspiration (don't just copy their idea though)!
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-container">
+                    <h2 class="page-section-subtitle faq-question">
+                        <ion-icon name="caret-down"></ion-icon>
+                        How much will it cost?
+                    </h2>
+                    <div class="faq-answer">
+                        <p class="page-section-description">
+                            MountainHacks will be free to attend! We’ll have meals, snacks,
+                            and beverages onsite at the hackathon, as well as swag, prizes,
+                            and fun mini-events, including workshops.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <div class="page-section">
+                <h1 class="page-section-title">
+                    REGISTER FOR MOUNTAIN HACKS 2023
+                </h1>
+                <hr />
+                <p class="page-section-description center-text">
+                    What are you waiting for? Click to go to the Google Form for registration!
+                    <br />
+                    <br />
+                </p>
+                <a class="button input big-button center-block center-text thick-button" href="links/register.html">
+                    REGISTER FOR MountainHacks 2023 →
+                </a>
+                <p class="page-section-description center-text">
+                    And make sure to share it with others!
+                </p>
             </div>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="theme-toggle-btn-container" onclick="toggleTheme()">
+        <ion-icon name="sunny" class="theme-toggle-btn" id="light-theme-sun"></ion-icon>
+        <ion-icon name="moon" class="theme-toggle-btn" id="dark-theme-moon"></ion-icon>
+    </div>
 
-    <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
-    <script type="module" src="dbConfig.js"></script>
-    
+    <script src="js/script.js"></script>
+    <script src="js/scrollEffect.js"></script>
+
+    <!--     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script type="module" src="dbConfig.js"></script> -->
+
+    <script src="libraries/three.min.js"></script>
+    <script src="js/stars.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
 
 </html>
