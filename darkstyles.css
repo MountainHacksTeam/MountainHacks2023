@@ -90,6 +90,10 @@ hr {
     color: #3f719d;
 }
 
+.site-menu {
+    color: white;
+}
+
 .page-card {
     border: solid 4px #2d689f;
     background-color: #2865a23b;

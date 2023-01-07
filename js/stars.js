@@ -18,7 +18,6 @@ addEventListener("mousemove", (event) => {
 
     mousePos.x = 2 * cX / wW;
     mousePos.y = 2 * cY / wH;
-    console.log(mousePos);
 })
 
 function init() {

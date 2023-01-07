@@ -10,6 +10,8 @@ var pageBanner = document.querySelector("#main-page-banner");
 var downArrow = document.querySelector("#down-arrow-effect");
 var faqSection = document.querySelector("div.faq-section");
 
+var gap = 80;
+
 var darkThemeCss = document.querySelector("#dark-theme-css");
 var lightThemeCss = document.querySelector("#light-theme-css");
 
@@ -23,7 +25,7 @@ if (localStorage.getItem("theme") == "light") {
 }
 
 function adjustStuff(repeat = 0, minScroll = 0.01) {
-    var gap = topBar.offsetHeight;
+    gap = topBar.offsetHeight;
     pageContent.style.marginTop = `${gap}px`;
 
     if (pageBanner) pageBanner.style.height = `calc(100vh - ${gap}px)`;
