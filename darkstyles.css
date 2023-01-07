@@ -72,6 +72,20 @@ hr {
     border-color: #346898;
 }
 
+.big-page-banner-btn {
+    box-shadow: 0px 0px 20px #bddfff99;
+    color: #205383;
+    border: solid 3px #205383;
+}
+
+.big-page-banner-btn:hover {
+    background-color: #205383 !important;
+    color: #ffffff;
+    border: solid 3px #205383;
+    text-shadow: 0px 0px 10px #80c1ff99;
+    box-shadow: 0px 0px 10px #00000055;
+}
+
 .page-banner-title {
     color: #afd8ff;
     text-shadow: 0 0 20px #afd8ff77;
@@ -87,7 +101,7 @@ hr {
 }
 
 .page-banner-left-page-title {
-    color: #3f719d;
+    color: #5d98cb;
 }
 
 .site-menu {
@@ -110,6 +124,10 @@ hr {
 
 .page-card:hover .page-section-description {
     color: white;
+}
+
+.page-card.no-bg:hover * {
+    color: white !important;
 }
 
 .page-card-person .page-section-description {

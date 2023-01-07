@@ -39,7 +39,7 @@ function siteMenuFailedToLoad(reason) {
     console.log("site menu failed to load for reason:", reason);
 }
 
-var url = location.protocol + "//" + location.host + "/siteMenu.html";
+var url = location.protocol + "//" + location.host + "/site-menu.html";
 console.log("fetching site menu from url:", url);
 
 fetch(url).then((value) => {

@@ -380,6 +380,23 @@ hr {
     margin: 3px;
 }
 
+.big-page-banner-btn {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: start;
+    font-size: 300%;
+    background-color: transparent !important;
+    border: solid 3px white;
+    backdrop-filter: invert() hue-rotate(180deg);
+}
+
+.big-page-banner-btn:hover {
+    background-color: #205383 !important;
+    color: #ffffff;
+    border: solid 3px #205383;
+    text-shadow: 0px 0px 10px #80c1ff99;
+    box-shadow: 0px 0px 10px #00000055;
+}
+
 .page-banner-right {
     width: min-content;
     text-align: right;
@@ -578,6 +595,19 @@ hr {
     border-radius: 30px;
     padding: 20px;
     border: solid 4px #2d689f;
+    flex-grow: 0.3;
+}
+
+.no-bg {
+    background-color: transparent !important;
+}
+
+.no-border {
+    border: none !important;
+}
+
+.page-card.no-bg:hover * {
+    color: #438cd0 !important;
 }
 
 .page-card:hover {
@@ -604,6 +634,9 @@ hr {
 
 .page-card-person-img {
     border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
     max-height: 200px;
 }
 
@@ -675,7 +708,7 @@ hr {
     border-radius: 30px;
     margin: 3px;
     width: 20vw;
-    min-width: max(min-content, 300px);
+    min-width: 250px;
     max-width: 45vw;
     height: fit-content;
 /*     flex-grow: 0.6; */
@@ -751,7 +784,12 @@ hr {
 .page-section-description {
     margin-bottom: 5px;
     font-size: 120%;
-    transition: none;
+}
+
+button .page-section-description,
+.button .page-section-description {
+    color: white;
+    font-size: 65%;
 }
 
 .page-card:hover a {
@@ -818,12 +856,21 @@ hr {
     transform: translateY(2px);
 }
 
+.sponsorship-pdf-iframe {
+    width: 90%;
+    height: 80vh;
+}
+
 @media (max-width: 1000px) {
     .big-button {
         font-size: 140%;
         border-radius: 15px;
         padding: 8px;
         font-weight: 800;
+    }
+    .big-page-banner-btn {
+        padding: 12px;
+        font-size: 160%;
     }
     .page-banner-left-big-text {
         font-size: 200%;
@@ -859,6 +906,9 @@ hr {
     }
     .page-banner-left-content {
         text-align: center;
+    }
+    .page-banner-left-page-title {
+        font-size: 200%;
     }
     .page-banner-btn-container {
         justify-content: center;
