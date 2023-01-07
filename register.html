@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta name="og:title" content="MountainHacks 2023" />
+    <meta name="og:description" content="Join an in-person hackathon for high school students!" />
+    <meta name="og:image" content="" />
+
+    <link rel="icon" href="assets/favicon.png" />
+
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+    
+    <link href="style.css" rel="stylesheet" type="text/css" id="light-theme-css" />
+    <link href="darkstyles.css" rel="stylesheet" type="text/css" id="dark-theme-css" />
+    
+    <title>Register | MountainHacks 2023</title>
+
+    <link rel="icon" href="" sizes="all" />
+</head>
+
+<body onload="adjustTopMargin(250)">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <a href="..">
+                <h1 class="top-bar-title">
+                    <span id="top-bar-title-mountain">MOUNTAIN</span><span id="top-bar-title-hacks">HACKS</span>
+                </h1>
+            </a>
+        </div>
+        <div class="top-bar-right">
+            <a class="top-bar-btn" href=".">
+                <h3 class="top-bar-btn-text">
+                    HOME
+                </h3>
+            </a>
+
+            <a class="top-bar-btn" href="register.html">
+                <h3 class="top-bar-btn-text selected-page">
+                    REGISTER
+                </h3>
+            </a>
+
+            <a class="top-bar-btn" href="sponsors.html">
+                <h3 class="top-bar-btn-text">
+                    SPONSORS
+                </h3>
+            </a>
+
+            <a class="top-bar-btn" href="aboutus.html">
+                <h3 class="top-bar-btn-text">
+                    ABOUT US
+                </h3>
+            </a>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="page-banner page-banner-small">
+            <div class="page-banner-left">
+                <h1 class="page-banner-left-page-title">REGISTER</h1>
+            </div>
+            <div class="page-banner-right">
+                <h1 class="page-banner-title">MOUNTAIN</h1>
+                <h2 class="page-banner-subtitle">HACKS</h2>
+            </div>
+
+            <div class="page-banner-effect-container">
+                <img src="assets/mountains_wide.svg" id="mountain" />
+            </div>
+            <div class="page-banner-effect-container" id="stars-canvas-container">
+                <canvas width="100%" height="100%" id="stars-canvas"></canvas>
+            </div>
+        </div>
+        <div class="page-main-content">
+            <div class="page-section">
+                <h1 class="page-section-title">
+                    REGISTER FOR MOUNTAIN HACKS 2023
+                </h1>
+                <p class="page-section-description center-text">
+                    Click to go to the Google Form for registration!
+                    <br />
+                    <br />
+                </p>
+                <a class="button input big-button center-block" href="links/register.html">
+                    REGISTER →
+                </a>
+            </div>
+
+            <div class="page-card-container">
+                <div class="page-card">
+                    <h1 class="page-section-title">
+                        REGISTERING
+                    </h1>
+                    <p class="page-section-description">
+                        Register with the Google Form above. In some time after that, a few weeks before the hackathon,
+                        you'll get an email with more information about where exactly to go, how the hackathon will
+                        work, what you need to bring, and more!
+                    </p>
+                </div>
+
+                <div class="page-card">
+                    <h1 class="page-section-title">
+                        TELL EVERYONE
+                    </h1>
+                    <p class="page-section-description">
+                        Know other hackers, or just people interested in coding? TELL EVERYONE ABOUT MountainHacks!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme-toggle-btn-container" onclick="toggleTheme()">
+        <ion-icon name="sunny" class="theme-toggle-btn" id="light-theme-sun"></ion-icon>
+        <ion-icon name="moon" class="theme-toggle-btn" id="dark-theme-moon"></ion-icon>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/scrollEffect.js"></script>
+
+    <!--     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script type="module" src="dbConfig.js"></script> -->
+
+    <script src="libraries/three.min.js"></script>
+    <script src="js/stars.js"></script>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+</html>

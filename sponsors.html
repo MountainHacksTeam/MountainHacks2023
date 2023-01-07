@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta name="og:title" content="MountainHacks 2023" />
+    <meta name="og:description" content="Join an in-person hackathon for high school students!" />
+    <meta name="og:image" content="" />
+
+    <link rel="icon" href="assets/favicon.png" />
+
+    <link href='https://fonts.googleapis.com/css?family=Space Grotesk' rel='stylesheet'>
+
+    <link href="style.css" rel="stylesheet" type="text/css" id="light-theme-css" />
+    <link href="darkstyles.css" rel="stylesheet" type="text/css" id="dark-theme-css" />
+
+    <title>Sponsors | MountainHacks 2023</title>
+
+    <link rel="icon" href="" sizes="all" />
+</head>
+
+<body onload="adjustTopMargin(250)">
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <a href="..">
+                <h1 class="top-bar-title">
+                    <span id="top-bar-title-mountain">MOUNTAIN</span><span id="top-bar-title-hacks">HACKS</span>
+                </h1>
+            </a>
+        </div>
+        <div class="top-bar-right">
+            <a class="top-bar-btn" href=".">
+                <h3 class="top-bar-btn-text">
+                    HOME
+                </h3>
+            </a>
+
+            <a class="top-bar-btn" href="register.html">
+                <h3 class="top-bar-btn-text">
+                    REGISTER
+                </h3>
+            </a>
+
+            <a class="top-bar-btn" href="sponsors.html">
+                <h3 class="top-bar-btn-text selected-page">
+                    SPONSORS
+                </h3>
+            </a>
+
+            <a class="top-bar-btn" href="aboutus.html">
+                <h3 class="top-bar-btn-text">
+                    ABOUT US
+                </h3>
+            </a>
+        </div>
+    </div>
+    <div class="page-content">
+        <div class="page-banner page-banner-small">
+            <div class="page-banner-left">
+                <h1 class="page-banner-left-page-title">SPONSORS</h1>
+            </div>
+            <div class="page-banner-right">
+                <h1 class="page-banner-title">MOUNTAIN</h1>
+                <h2 class="page-banner-subtitle">HACKS</h2>
+            </div>
+
+            <div class="page-banner-effect-container">
+                <img src="assets/mountains_wide.svg" id="mountain" />
+            </div>
+            <div class="page-banner-effect-container" id="stars-canvas-container">
+                <canvas width="100%" height="100%" id="stars-canvas"></canvas>
+            </div>
+        </div>
+        <div class="page-main-content">
+            <div class="page-section">
+                <h1 class="page-section-title">
+                    SPONSOR MOUNTAIN HACKS 2023
+                </h1>
+                <p class="page-section-description center-text">
+                    lorem ipsum description here
+                    <br />
+                    <br />
+                </p>
+
+                <a class="button input big-button center-block">
+                    SPONSOR US →
+                </a>
+            </div>
+
+            <div class="page-section">
+                <h1 class="page-section-title">
+                    OUR SPONSORS
+                </h1>
+                <div class="page-card-container small-page-card-container">
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Google
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/2048px-Google_%22G%22_Logo.svg.png" />
+                        <p class="page-section-description">
+                            (disclaimer: not really)
+                        </p>
+                    </div>
+
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Amazon
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Amazon_icon.svg/2500px-Amazon_icon.svg.png" />
+                        <p class="page-section-description">
+                            (disclaimer: not really)
+                        </p>
+                    </div>
+
+                    <div class="page-card small-page-card">
+                        <h1 class="page-section-title">
+                            Twitter
+                        </h1>
+                        <img class="page-card-img"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/2491px-Twitter-logo.svg.png" />
+                        <p class="page-section-description">
+                            (disclaimer: not really)
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-card-container">
+                <div class="page-card">
+                    <h1 class="page-section-title">
+                        ABOUT SPONSORING
+                    </h1>
+                    <p class="page-section-description">
+                        Whether you're sponsoring as a prize provider, a material provider, or a swag provider, we
+                        appreciate all the support that we can get with organizing our hackathon!
+                    </p>
+                </div>
+
+                <div class="page-card">
+                    <h1 class="page-section-title">
+                        SUCCESS
+                    </h1>
+                    <p class="page-section-description">
+                        Our goal is to make our hackathon as good or better than other hackathons, so to create an
+                        amazing experience, we'll need as much help from sponsors as we can get. Sponsoring us will help
+                        provide us with materials or prizes to attract more hackers and let everyone have a fun time!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="theme-toggle-btn-container" onclick="toggleTheme()">
+        <ion-icon name="sunny" class="theme-toggle-btn" id="light-theme-sun"></ion-icon>
+        <ion-icon name="moon" class="theme-toggle-btn" id="dark-theme-moon"></ion-icon>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/scrollEffect.js"></script>
+
+    <!--     <script src="https://www.gstatic.com/firebasejs/8.3.1/firebase-database.js"></script>
+    <script type="module" src="dbConfig.js"></script> -->
+
+    <script src="libraries/three.min.js"></script>
+    <script src="js/stars.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+
+</html>
