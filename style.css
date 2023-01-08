@@ -387,6 +387,7 @@ hr {
     background-color: transparent !important;
     border: solid 3px white;
     backdrop-filter: invert() hue-rotate(180deg);
+    cursor: pointer;
 }
 
 .big-page-banner-btn:hover {
