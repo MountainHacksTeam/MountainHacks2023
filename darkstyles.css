@@ -134,7 +134,9 @@ hr {
     color: white;
 }
 
-
+.page-card-person-subtitle {
+    color: #5b91c8;
+}
 
 .small-page-card {
     border: solid 3px #4f779c44;
