@@ -73,9 +73,10 @@ hr {
 }
 
 .big-page-banner-btn {
-    box-shadow: 0px 0px 20px #bddfff99;
-    color: #205383;
-    border: solid 3px #205383;
+    box-shadow: 0px 0px 20px #bddfff99, 0px 0px 12px #70a9de inset;
+    color: #afd7fd;
+    text-shadow: 0px 0px 20px #70a9de;
+    border: solid 3px #70a9de;
 }
 
 .big-page-banner-btn:hover {
@@ -94,6 +95,10 @@ hr {
 .page-banner-subtitle {
     color: #afd8ff;
     text-shadow: 0 0 10px #afd8ff77;
+}
+
+.socials-dot-separator {
+    color: #afd8ff;
 }
 
 .page-banner-left-title {

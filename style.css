@@ -385,9 +385,8 @@ hr {
     font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: start;
     font-size: 300%;
-    background-color: transparent !important;
     border: solid 3px white;
-    backdrop-filter: invert() hue-rotate(180deg);
+    background-color: #347eb766;
     cursor: pointer;
 }
 
@@ -414,6 +413,79 @@ hr {
     margin: 0px;
     font-size: 350%;
     font-weight: 200;
+}
+
+.page-banner-subtitle-and-socials-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.page-banner-social {
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    padding: 7px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000066;
+}
+
+.page-banner-social:hover {
+    transform: scale(1.05);
+}
+
+.page-banner-social img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+#social-github {
+    box-shadow: 0px 0px 20px #B400FF77 inset, 0px 0px 15px #B400FF66;
+    color: #B400FF;
+}
+
+#social-instagram {
+    box-shadow: 0px 0px 20px #FA368E77 inset, 0px 0px 15px #FA368E66;
+    color: #FA368E;
+}
+
+#social-twitter {
+    box-shadow: 0px 0px 20px #1da1f277 inset, 0px 0px 15px #1da1f266;
+    color: #1da1f2;
+}
+
+#social-youtube {
+    box-shadow: 0px 0px 20px #ff000077 inset, 0px 0px 15px #ff000066;
+    color: #ff0000;
+}
+
+#social-github:hover {
+    background-color: #4b006b66;
+}
+#social-instagram:hover {
+    background-color: #7a003766;
+}
+#social-twitter:hover {
+    background-color: #00457066;
+}
+#social-youtube:hover {
+    background-color: #61000066;
+}
+
+.socials-dot-separator {
+    width: 0px;
+    height: 0px;
+    border: solid 3px;
+    margin-left: 7px;
+    margin-right: 7px;
+    color: #000000;
+    border-radius: 50px;
 }
 
 .page-banner-left-title {
@@ -954,6 +1026,12 @@ button .page-section-description,
     }
     .top-bar-menu-btn {
         display: flex;
+    }
+    .page-banner-social {
+        width: 25px;
+        height: 25px;
+        margin: 2px;
+        padding: 4px;
     }
 }
 
