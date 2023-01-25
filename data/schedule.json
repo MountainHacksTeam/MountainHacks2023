@@ -1,0 +1,86 @@
+{
+    "schedule": [
+        {
+            "start": "7:30 AM",
+            "end": "10:00 PM",
+            "name": "MountainHacks",
+            "boldest": true
+        },
+        {
+            "start": "7:30 AM",
+            "end": "8:15 AM",
+            "name": "Check-in"
+        },
+        {
+            "start": "7:30 AM",
+            "end": "8:15 AM",
+            "name": "Breakfast",
+            "bold": true
+        },
+        {
+            "start": "8:30 AM",
+            "end": "9:00 AM",
+            "name": "Opening Ceremony",
+            "bold": true
+        },
+        {
+            "start": "9:00 AM",
+            "end": "9:15 AM",
+            "name": "Team Formation"
+        },
+        {
+            "start": "9:00 AM",
+            "end": "8:00 PM",
+            "name": "Hacking Period",
+            "bold": true
+        },
+        {
+            "start": "10:00 AM",
+            "end": "10:40 AM",
+            "name": "Workshop 1 (TBD)"
+        },
+        {
+            "start": "12:00 PM",
+            "end": "1:00 PM",
+            "name": "Lunch",
+            "bold": true
+        },
+        {
+            "start": "2:00 PM",
+            "end": "2:40 PM",
+            "name": "Workshop 2 (TBD)"
+        },
+        {
+            "start": "3:45 PM",
+            "end": "4:30 PM",
+            "name": "Mini Event 1"
+        },
+        {
+            "start": "5:00 PM",
+            "end": "5:40 PM",
+            "name": "Workshop 3 (TBD)"
+        },
+        {
+            "start": "8:00 PM",
+            "end": "9:00 PM",
+            "name": "Dinner",
+            "bold": true
+        },
+        {
+            "start": "8:00 PM",
+            "end": "9:30 PM",
+            "name": "Judging"
+        },
+        {
+            "start": "8:00 PM",
+            "end": "9:30 PM",
+            "name": "Games / Activities / DJ"
+        },
+        {
+            "start": "9:30 PM",
+            "end": "10:00 PM",
+            "name": "Closing Ceremony",
+            "bold": true
+        }
+    ]
+}

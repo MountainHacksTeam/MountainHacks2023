@@ -1,0 +1,44 @@
+{
+    "sponsors": [
+        {
+            "name": "MHHS",
+            "imgURL": "assets/sponsors/mhhs.png",
+            "description": "Mountain House High School is the school where MountainHacks is being hosted!"
+        },
+        {
+            "name": "HackClub",
+            "imgURL": "assets/sponsors/hackclubbank.png",
+            "description": "MountainHacks's bank is run on Hack Club Bank! Hack Club offers many services to help host hackathons.",
+            "btnLink": "https://hackclub.com/",
+            "btnLinkTitle": "HackClub.com"
+        },
+        {
+            "name": "GenXYZ",
+            "imgURL": "assets/sponsors/genxyz.png",
+            "description": "Get a free xyz website domain for yourself by participating in the hackathon!",
+            "btnLink": "https://gen.xyz/",
+            "btnLinkTitle": "gen.xyz"
+        },
+        {
+            "name": "Echo3D",
+            "imgURL": "assets/sponsors/echo3d.png",
+            "description": "",
+            "btnLink": "https://www.echo3d.com/",
+            "btnLinkTitle": "echo3d.com"
+        },
+        {
+            "name": "Sticker Giant",
+            "imgURL": "assets/sponsors/stickergiant.png",
+            "description": "Sticker giant provides custom stickers for big events!",
+            "btnLink": "https://www.stickergiant.com/",
+            "btnLinkTitle": "stickergiant.com"
+        },
+        {
+            "name": "Art of Problem Solving",
+            "imgURL": "assets/sponsors/aops.png",
+            "description": "AoPS provides interactive educational opportunities for avid students of mathematics, as well as informatics, physics, programming, and others.",
+            "btnLink": "https://artofproblemsolving.com/",
+            "btnLinkTitle": "artofproblemsolving.com"
+        }
+    ]
+}

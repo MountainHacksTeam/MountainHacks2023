@@ -15,7 +15,7 @@
 
     <link href="style.css" rel="stylesheet" type="text/css" id="light-theme-css" />
     <link href="darkstyles.css" rel="stylesheet" type="text/css" id="dark-theme-css" />
-    
+
     <title>Schedule | MountainHacks 2023</title>
 
     <link rel="icon" href="" sizes="all" />
@@ -88,26 +88,32 @@
                 <h1 class="page-section-title">
                     SCHEDULE
                 </h1>
-                <div class="schedule">
-                    <div class="schedule-row">
-                        <h2>
-                            7 AM
+                <p class="page-section-subtitle center-text">
+                    MountainHacks'23 will take place on March 18, 2023.
+                </p>
+                <br />
+                <br />
+                <div class="schedule" id="schedule">
+                    <div class="schedule-row" id="schedule-row-template">
+                        <h2 class="schedule-time">
+                            HH:MM AM
                         </h2>
-                        <h3>•</h3>
-                        <p>
-                            Arrival
-                        </p>
+                        <h3 class="schedule-row-divider">•</h3>
+                        <h2 class="schedule-name">
+                            Event Name
+                        </h2>
                     </div>
                     <div class="schedule-row">
-                        <h2>
-                            9 PM
+                        <h2 class="schedule-time">
+                            Loading
                         </h2>
                         <h3>•</h3>
-                        <p>
-                            Departure
-                        </p>
+                        <h2 class="schedule-name">
+                            ...
+                        </h2>
                     </div>
                 </div>
+                <script src="js/scheduleLoader.js"></script>
             </div>
         </div>
     </div>
@@ -125,7 +131,7 @@
 
     <script src="libraries/three.min.js"></script>
     <script src="js/stars.js"></script>
-    
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

@@ -87,15 +87,20 @@ function toggleTheme() {
 setInterval(adjustStuff, 200);
 
 function faqQuestionClicked(path) {
+    console.log("searching faq in path ", path);
     for (var e in path) {
+        console.log("search checking ", e, path[e]);
         if (path[e].className.indexOf("faq-question") !== -1) return path[e];
     }
+    console.log("couldn't find faq in path ", path);
     return null;
 }
 
 function onFaqClick(event) {
-    var faqQuestion = faqQuestionClicked(event.path);
-    console.log("faqClick", event.path)
+    console.log("faq event", event);
+    var path = event.composedPath();
+    var faqQuestion = faqQuestionClicked(path);
+    console.log("faqClick", path)
     console.log("faq question clicked: ", faqQuestion);
     if (faqQuestion) {
         var faqAnswer = faqQuestion.parentElement.querySelector(".faq-answer");
@@ -117,10 +122,16 @@ function onFaqClick(event) {
             faqAnswer.setAttribute("closed", "1");
         }
     }
+    else {
+        console.log("faq event called but not work", faqQuestion)
+    }
 }
 
 if (faqSection) {
     faqSection.addEventListener("click", onFaqClick);
+}
+else {
+    console.log("faq section is ", faqSection);
 }
 console.log("faqSection", faqSection);
 

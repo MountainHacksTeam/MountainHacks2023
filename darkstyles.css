@@ -206,3 +206,15 @@ hr {
 .schedule-row {
     color: white;
 }
+
+.schedule-time {
+    color: #94cbff;
+}
+
+
+@media (max-width: 800px) {
+    .schedule-row {
+        background-color: #ffffff11;
+        border: solid 1px #ffffff44;
+    }
+}

@@ -11,7 +11,8 @@
 .page-banner-title,
 .page-banner-subtitle,
 .page-section-title,
-.page-card-person-subtitle {
+.page-card-person-subtitle,
+.schedule-row-bold {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -257,6 +258,14 @@ hr {
     pointer-events: initial;
 }
 
+#banner-logo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.3;
+    transform: scale(0.8);
+}
+
 @keyframes down-arrow-anim-big {
     0%, 20%, 80%, 100% {
         transform: translateY(0%) scale(0);
@@ -319,7 +328,7 @@ hr {
     position: fixed;
     z-index: 60;
     background-color: #2c466866;
-    outline: solid 1px #9ec8ff66;
+    border: solid 1px #9ec8ff66;
     bottom: 6px;
     left: 6px;
     border-radius: 100px;
@@ -396,6 +405,20 @@ hr {
     border: solid 3px #205383;
     text-shadow: 0px 0px 10px #80c1ff99;
     box-shadow: 0px 0px 10px #00000055;
+}
+
+.page-banner-donate-btn {
+    font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    padding: 5px;
+    background-color: #20538366 !important;
+    font-size: 130%;
+    border-color: #5c92c4;
+}
+
+.page-banner-donate-btn:hover {
+    border-color: #97c1e7;
+    background-color: #97c1e7;
 }
 
 .page-banner-right {
@@ -663,6 +686,15 @@ hr {
     justify-content: center;
 }
 
+.home-page-about-us-card-container .page-card-person {
+    padding: 5px;
+}
+
+.home-page-about-us-card-container .page-card-person .page-card-person-img {
+    width: 150px;
+    height: 150px;
+}
+
 .page-card {
     width: 300px;
     margin: 15px;
@@ -829,6 +861,55 @@ hr {
     color: white;
 }
 
+#sponsor-template {
+    display: none;
+}
+
+#sponsors-container {
+    align-items: center;
+}
+
+.page-card-btn .page-section-description {
+    margin-bottom: 4px;
+}
+
+.sponsor-card .page-card-btn {
+    border: solid 2px #5096dc55;
+    cursor: pointer;
+    margin-top: 10px;
+    padding-bottom: 2px;
+}
+
+.sponsor-card .page-card-btn:hover {
+    border: solid 2px #69b0f2;
+    background-color: initial;
+}
+
+.sponsor-card .page-card-btn ion-icon {
+    font-size: 30px;
+}
+
+.sponsor-card .page-card-btn:hover ion-icon {
+    transform: scale(1.2) rotate(-45deg);
+}
+
+.sponsor-card {
+    padding-bottom: 15px;
+}
+
+.small-sponsor-card {
+    padding: 5px;
+    border-radius: 12px;
+}
+
+.small-sponsor-card .page-section-title {
+    font-size: 250%;
+}
+
+.small-sponsor-card .page-card-img {
+    max-height: 80px;
+}
+
 .page-section {
     padding-left: 100px;
     padding-right: 100px;
@@ -925,11 +1006,19 @@ button .page-section-description,
     padding: 0px;
 }
 
+.schedule {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .schedule-row {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .schedule-row>* {
@@ -941,6 +1030,44 @@ button .page-section-description,
 
 .schedule-row>p {
     transform: translateY(2px);
+}
+
+.schedule-row>h2 {
+/*     border: solid  */
+}
+
+.schedule-time {
+    flex: 0.5;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+.schedule-time>* {
+    display: block;
+}
+
+.schedule-name {
+    flex: 0.5;
+}
+
+.schedule-time {
+    color: #224363;
+}
+
+.schedule-row-bold * {
+    font-weight: 800;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.schedule-row-boldest * {
+    font-size: 50px;
+    font-weight: 900;
+}
+
+#schedule-row-template {
+    display: none;
 }
 
 .sponsorship-pdf-iframe {
@@ -965,6 +1092,9 @@ button .page-section-description,
     .thick-button {
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+    .schedule-row-bold * {
+        font-size: 30px;
     }
 }
 
@@ -1032,6 +1162,24 @@ button .page-section-description,
         height: 25px;
         margin: 2px;
         padding: 4px;
+    }
+    .schedule-row {
+        flex-direction: column;
+        width: 90%;
+        margin-bottom: 5px;
+        background-color: #2f7ac111;
+        border: solid 1px #00000044;
+        border-radius: 10px;
+        padding: 5px;
+    }
+    .schedule-row-divider {
+        display: none;
+    }
+    .schedule-time {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }
 
