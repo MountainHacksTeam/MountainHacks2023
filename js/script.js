@@ -145,7 +145,12 @@ function onDownArrowClick() {
 
 function main() {
     console.log("document loaded");
-    document.querySelectorAll(".faq-question").forEach((element) => { element.click(); console.log("clicked", element) });
+    document.querySelectorAll(".faq-question").forEach((element) => {
+        if (element.id != "mountainhacks-faq-question") {
+            element.click();
+        }
+        console.log("clicked", element);
+    });
 }
 
 main();
