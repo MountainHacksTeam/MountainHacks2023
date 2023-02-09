@@ -1,4 +1,13 @@
 
+// redirect to main domain
+if (location.host == 'mountainhacks.repl.co') {
+    location = 'https://mountainhacks23.com'
+        + location.pathname
+        + location.search
+        + location.hash;
+}
+
+
 document.addEventListener("resize", () => {
     adjustStuff(250);
 });
