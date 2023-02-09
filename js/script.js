@@ -24,6 +24,8 @@ if (localStorage.getItem("theme") == "light") {
     setInterval(toggleTheme(), 500);
 }
 
+var atTop = true;
+
 function adjustStuff(repeat = 0, minScroll = 0.01) {
     gap = topBar.offsetHeight;
     pageContent.style.marginTop = `${gap}px`;
@@ -32,6 +34,10 @@ function adjustStuff(repeat = 0, minScroll = 0.01) {
 
     if (window.scrollY / window.innerHeight >= minScroll) {
         // scrolled down
+        if (atTop) {
+            startGrowNumberAnim(120, 2, true);
+        }
+        atTop = false;
         if (darkTheme) {
             if (pageBanner) document.body.style.backgroundColor = "#0a1c2d";
             topBar.style.backgroundColor = "#4c85b980";
@@ -44,6 +50,7 @@ function adjustStuff(repeat = 0, minScroll = 0.01) {
     }
     else {
         // at top of page
+        atTop = true;
         if (darkTheme) {
             if (pageBanner) document.body.style.backgroundColor = "#05335e";
             if (!pageBanner) topBar.style.backgroundColor = "#05335e";
@@ -141,6 +148,50 @@ function onDownArrowClick() {
         top: window.innerHeight - topBar.offsetHeight,
         behavior: "smooth"
     });
+}
+
+var growInterval;
+
+function startGrowNumberAnim(fractions, time, replace) {
+    if (!replace && growInterval) {
+        return;
+    }
+    var animatedNums = document.getElementsByClassName("grow-number-anim");
+    for (var e in animatedNums) {
+        var el = animatedNums.item(e);
+        el.setAttribute("grow-progress", "0");
+        if (!el.getAttribute("grow-target")) {
+            el.setAttribute("grow-target", el.innerText);
+        }
+    }
+    if (growInterval) {
+        clearInterval(growInterval);
+    }
+    growInterval = setInterval(() => { growAllNumberAnim(fractions) }, 1000 *  time / fractions);
+}
+
+function growNumberAnim(e, fractions) {
+    var growTarget = e.getAttribute("grow-target");
+    var growProgress = e.getAttribute("grow-progress");
+    if (parseFloat(growProgress) >= 1) {
+        e.innerText = growTarget;
+        e.setAttribute("grow-progress", 1);
+        return;
+    }
+    
+    var newGrowProgress = parseFloat(growProgress) + (1 / fractions);
+    console.log("newGrowProgress", newGrowProgress);
+    var nextNum = parseFloat(growTarget) * newGrowProgress;
+    console.log("nextNum", nextNum);
+    e.setAttribute("grow-progress", newGrowProgress.toString());
+    e.innerText = Math.round(nextNum);
+}
+
+function growAllNumberAnim(fractions) {
+    var animatedNums = document.getElementsByClassName("grow-number-anim");
+    for (var e in animatedNums) {
+        growNumberAnim(animatedNums.item(e), fractions);
+    }
 }
 
 function main() {

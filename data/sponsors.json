@@ -13,6 +13,27 @@
             "btnLinkTitle": "HackClub.com"
         },
         {
+            "name": "MLH",
+            "imgURL": "assets/sponsors/mlh.png",
+            "description": "Major League Hacking!",
+            "btnLink": "https://mlh.io/",
+            "btnLinkTitle": "mlh.io"
+        },
+        {
+            "name": "GitHub",
+            "imgURL": "assets/sponsors/github.png",
+            "description": "GitHub Global Campus helps everyone shape the next generation of software development.",
+            "btnLink": "https://hackp.ac/pizzafund-github",
+            "btnLinkTitle": "education.github.com"
+        },
+        {
+            "name": "Stack Overflow",
+            "imgURL": "assets/sponsors/stackoverflow.png",
+            "description": "Represent Stack Overflow on campus, complete challenges, earn rewards and get unique opportunities to engage.",
+            "btnLink": "https://hackp.ac/pizzafund-stackoverflow",
+            "btnLinkTitle": "students.stackoverflow.co"
+        },
+        {
             "name": "GenXYZ",
             "imgURL": "assets/sponsors/genxyz.png",
             "description": "Get a free xyz website domain for yourself by participating in the hackathon!",
@@ -22,7 +43,7 @@
         {
             "name": "Echo3D",
             "imgURL": "assets/sponsors/echo3d.png",
-            "description": "",
+            "description": "3D-focused API and cloud infrastructure to store, update, secure, and stream 3D content for real-time applications.",
             "btnLink": "https://www.echo3d.com/",
             "btnLinkTitle": "echo3d.com"
         },
@@ -39,6 +60,34 @@
             "description": "AoPS provides interactive educational opportunities for avid students of mathematics, as well as informatics, physics, programming, and others.",
             "btnLink": "https://artofproblemsolving.com/",
             "btnLinkTitle": "artofproblemsolving.com"
+        },
+        {
+            "name": "Taskade",
+            "imgURL": "assets/sponsors/taskade.png",
+            "description": "The ultimate to-do list app for managing tasks, writing notes, and collaborating with others!",
+            "btnLink": "https://www.taskade.com/",
+            "btnLinkTitle": "taskade.com"
+        },
+        {
+            "name": "Computer History Museum",
+            "imgURL": "assets/sponsors/chm.png",
+            "description": "A Silicon Valley Museum that explores the computing revolution’s impact on society.",
+            "btnLink": "https://computerhistory.org/",
+            "btnLinkTitle": "computerhistory.org"
+        },
+        {
+            "name": ".tech",
+            "imgURL": "assets/sponsors/tech.png",
+            "description": "Domain name extension for the new tech revolution.",
+            "btnLink": "https://hackp.ac/pizzafund-radix",
+            "btnLinkTitle": "www.domain.com/mlh"
+        },
+        {
+            "name": "Twilio Field Operator",
+            "imgURL": "assets/sponsors/twilio.png",
+            "description": "Looking for student leaders who want new opportunities to lead, explore new technologies and serve their communities. ",
+            "btnLink": "https://hackp.ac/pizzafund-twilio",
+            "btnLinkTitle": "twilio.com/quest/students"
         }
     ]
 }
