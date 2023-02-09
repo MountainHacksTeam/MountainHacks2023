@@ -34,7 +34,7 @@ function adjustStuff(repeat = 0, minScroll = 0.01) {
 
     if (window.scrollY / window.innerHeight >= minScroll) {
         // scrolled down
-        if (atTop) {
+        if (atTop && location.pathname == "/" || location.pathname == "/index.html" || location.pathname == "") {
             startGrowNumberAnim(120, 2, true);
         }
         atTop = false;
@@ -167,7 +167,7 @@ function startGrowNumberAnim(fractions, time, replace) {
     if (growInterval) {
         clearInterval(growInterval);
     }
-    growInterval = setInterval(() => { growAllNumberAnim(fractions) }, 1000 *  time / fractions);
+    growInterval = setInterval(() => { growAllNumberAnim(fractions) }, 1000 * time / fractions);
 }
 
 function growNumberAnim(e, fractions) {
@@ -178,7 +178,7 @@ function growNumberAnim(e, fractions) {
         e.setAttribute("grow-progress", 1);
         return;
     }
-    
+
     var newGrowProgress = parseFloat(growProgress) + (1 / fractions);
     console.log("newGrowProgress", newGrowProgress);
     var nextNum = parseFloat(growTarget) * newGrowProgress;
