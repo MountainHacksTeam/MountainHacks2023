@@ -399,6 +399,13 @@ hr {
     cursor: pointer;
 }
 
+.big-page-banner-btn-small-text {
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-style: italic;
+}
+
 .big-page-banner-btn:hover {
     background-color: #205383 !important;
     color: #ffffff;
