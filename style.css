@@ -414,6 +414,11 @@ hr {
     box-shadow: 0px 0px 10px #00000055;
 }
 
+.big-page-banner-btn-disabled {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
 .page-banner-donate-btn {
     font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: italic;
