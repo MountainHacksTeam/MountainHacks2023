@@ -102,6 +102,13 @@
             "description": "Use Groupr’s platform to look for other hackers to be team members for the hackathon!",
             "btnLink": "https://groupr.tech/",
             "btnLinkTitle": "groupr.tech"
+        },
+        {
+            "name": "Postman",
+            "imgURL": "assets/sponsors/postman.png",
+            "description": "Postman is an API platform that simplifies each step of building and using APIs!",
+            "btnLink": "https://postman.com/",
+            "btnLinkTitle": "postman.com"
         }
     ]
 }
