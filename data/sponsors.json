@@ -88,6 +88,20 @@
             "description": "Looking for student leaders who want new opportunities to lead, explore new technologies and serve their communities. ",
             "btnLink": "https://hackp.ac/pizzafund-twilio",
             "btnLinkTitle": "twilio.com/quest/students"
+        },
+        {
+            "name": "Give My Certificate",
+            "imgURL": "assets/sponsors/givemycertificate.png",
+            "description": "Give My Certificate generates verifiable documents with Karma Scores, recognizing individual contributions.",
+            "btnLink": "https://givemycertificate.com/",
+            "btnLinkTitle": "givemycertificate.com"
+        },
+        {
+            "name": "Groupr",
+            "imgURL": "assets/sponsors/groupr.png",
+            "description": "Use Groupr’s platform to look for other hackers to be team members for the hackathon!",
+            "btnLink": "https://groupr.tech/",
+            "btnLinkTitle": "groupr.tech"
         }
     ]
 }
