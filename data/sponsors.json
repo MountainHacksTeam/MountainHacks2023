@@ -109,6 +109,20 @@
             "description": "Postman is an API platform that simplifies each step of building and using APIs!",
             "btnLink": "https://postman.com/",
             "btnLinkTitle": "postman.com"
+        },
+        {
+            "name": "CodeNinjas",
+            "imgURL": "assets/sponsors/codeninjas.png",
+            "description": "The world’s largest and fastest-growing kids coding franchise!",
+            "btnLink": "https://www.codeninjas.com/",
+            "btnLinkTitle": "www.codeninjas.com"
+        },
+        {
+            "name": "Radix",
+            "imgURL": "assets/sponsors/radix.png",
+            "description": "Cloud-based market research and analytics platform with tools to help users make sense of ambiguous data and drive performance.",
+            "btnLink": "https://www.radix.com/",
+            "btnLinkTitle": "www.radix.com"
         }
     ]
 }
