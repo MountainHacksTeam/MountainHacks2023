@@ -20,6 +20,13 @@
             "btnLinkTitle": "mlh.io"
         },
         {
+            "name": "CodeNinjas",
+            "imgURL": "assets/sponsors/codeninjas.png",
+            "description": "We make coding fun!",
+            "btnLink": "https://www.codeninjas.com/ca-tracy",
+            "btnLinkTitle": "www.codeninjas.com/ca-tracy"
+        },
+        {
             "name": "GitHub",
             "imgURL": "assets/sponsors/github.png",
             "description": "GitHub Global Campus helps everyone shape the next generation of software development.",
@@ -110,13 +117,7 @@
             "btnLink": "https://postman.com/",
             "btnLinkTitle": "postman.com"
         },
-        {
-            "name": "CodeNinjas",
-            "imgURL": "assets/sponsors/codeninjas.png",
-            "description": "The world’s largest and fastest-growing kids coding franchise!",
-            "btnLink": "https://www.codeninjas.com/",
-            "btnLinkTitle": "www.codeninjas.com"
-        },
+        
         {
             "name": "Radix",
             "imgURL": "assets/sponsors/radix.png",
