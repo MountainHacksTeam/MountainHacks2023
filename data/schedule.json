@@ -37,7 +37,7 @@
         {
             "start": "10:00 AM",
             "end": "10:40 AM",
-            "name": "Workshop 1 (TBD)"
+            "name": "Workshop 1"
         },
         {
             "start": "12:00 PM",
@@ -48,7 +48,7 @@
         {
             "start": "2:00 PM",
             "end": "2:40 PM",
-            "name": "Workshop 2 (TBD)"
+            "name": "Workshop 2"
         },
         {
             "start": "3:45 PM",
@@ -58,7 +58,7 @@
         {
             "start": "5:00 PM",
             "end": "5:40 PM",
-            "name": "Workshop 3 (TBD)"
+            "name": "Workshop 3"
         },
         {
             "start": "8:00 PM",
